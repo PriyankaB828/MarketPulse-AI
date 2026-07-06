@@ -1,0 +1,14 @@
+{
+  "name": "marketpulse-ai-root",
+  "version": "1.0.0",
+  "description": "MarketPulse AI: Autonomous Executive Decision Intelligence Platform & Business Digital Twin",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix frontend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "uvicorn backend.main:app --reload --port 8000",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
