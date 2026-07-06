@@ -432,13 +432,13 @@ memory.png
 
 A complete walkthrough video demonstrating the project is available on YouTube.
 
-(Add your YouTube link here)
+https://youtu.be/v9dlc87NRqs
 
 ---
 
 # 🌐 GitHub Repository
 
-(Add your GitHub repository link here)
+https://github.com/PriyankaB828/MarketPulse-AI
 
 ---
 
