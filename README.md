@@ -1,142 +1,469 @@
-# MarketPulse AI 🧠
+<img width="1920" height="1080" alt="Screenshot 2026-07-06 225850" src="https://github.com/user-attachments/assets/a9376691-b408-4104-b42d-825c724b8a4c" /><img width="1920" height="1020" alt="Screenshot 2026-07-06 225451" src="https://github.com/user-attachments/assets/9ec74bcc-430d-412f-a237-9c4052da90f8" /># 🧠 MarketPulse AI
+
 > **Autonomous Executive Decision Intelligence Platform & Business Digital Twin**
 
-MarketPulse AI is an enterprise-grade **Business Digital Twin** that simulates a C-Suite executive boardroom crisis response. Built for the Kaggle + Google "AI Agents Capstone Project," it demonstrates a true multi-agent network where 7 C-suite agents with competing constraints negotiate, dispute, vote, and arrive at consolidated corporate action items in real-time.
+MarketPulse AI is an AI-powered **Business Digital Twin** that simulates executive decision-making during real-world business crises.
+
+Instead of relying on a single AI assistant, the platform models an entire **C-suite boardroom** where seven autonomous executive agents independently analyze a business situation, debate alternative strategies, vote on solutions, and collectively recommend the optimal business decision.
+
+Built as part of the **Kaggle + Google AI Agents Intensive Vibe Coding Capstone Project**, MarketPulse AI demonstrates how multi-agent AI systems can improve enterprise decision-making through collaborative reasoning and explainable recommendations.
 
 ---
 
-## 🏗️ System Architecture
+# 🎯 Problem Statement
 
-MarketPulse AI implements a structured **14-Stage Decision Intelligence Pipeline**:
+Organizations regularly face high-impact business events such as:
+
+- Competitor price wars
+- Supply chain disruptions
+- Negative customer reviews
+- Seasonal demand spikes
+
+These situations require multiple departments to work together before executives make strategic decisions.
+
+Traditional dashboards only visualize data—they don't help executives reason through complex business situations.
+
+MarketPulse AI addresses this gap by simulating a complete executive boardroom where AI agents collaborate exactly like real business leaders.
+
+---
+
+# 💡 Solution
+
+MarketPulse AI creates a **Business Digital Twin** capable of simulating executive discussions before real business decisions are taken.
+
+Instead of receiving one AI response, executives observe:
+
+- Multiple AI agents investigating independently
+- Evidence sharing
+- Executive debates
+- Strategy proposals
+- Voting process
+- Final recommendation
+- Explainable reasoning
+- KPI projections
+- Historical business memory
+
+This allows organizations to evaluate multiple strategic options safely before implementing them.
+
+---
+
+# ✨ Features
+
+- Multi-Agent Executive Decision System
+- Business Digital Twin Dashboard
+- Real-time Crisis Simulation
+- Seven Autonomous Executive Agents
+- Executive Debate Timeline
+- Live Communication Graph
+- Strategy Voting Matrix
+- Explainable AI (Why-Not Panel)
+- CEO What-If Scenario Analysis
+- Historical Business Memory Ledger
+- Business KPI Dashboard
+- FastAPI Backend
+- React Frontend
+- Gemini AI Integration (Optional)
+- Deterministic Fallback Simulation (No API Key Required)
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Recharts
+- Lucide Icons
+
+## Backend
+
+- FastAPI
+- Python
+- Pydantic
+- Uvicorn
+
+## AI
+
+- Multi-Agent Architecture
+- Business Intelligence Tools
+- Google Gemini API (Optional)
+- Server-Sent Events (SSE)
+
+---
+
+# 👥 Executive AI Agents
+
+MarketPulse AI simulates a complete executive boardroom.
+
+| Agent | Responsibility |
+|--------|---------------|
+| CEO / Chief of Staff | Coordinates all executive discussions |
+| CFO | Protects profitability and ROI |
+| CMO | Protects market share and branding |
+| COO | Optimizes logistics and operations |
+| VP Inventory | Prevents stock shortages and overstock |
+| Chief Customer Officer | Protects customer satisfaction |
+| VP Market Intelligence | Monitors competitors and market threats |
+
+Each executive has different priorities and constraints, resulting in realistic business negotiations.
+
+---
+
+# 🔄 System Workflow
 
 ```
-[1. Business Crisis Activated]
-             ↓
-[2. Business Digital Twin State Loaded]
-             ↓
-[3. Round 1: Independent Investigation] (Each agent calls MCP tool)
-             ↓
-[4. Round 2: Evidence Sharing] (Data combined in context)
-             ↓
-[5. Round 3: Executive Debate] (Conflict resolution & reasoning negotiation)
-             ↓
-[6. Round 4: Strategy Proposals] (Each agent proposes its optimal strategy)
-             ↓
-[7. Round 5: Executive Voting] (Agents vote on all strategies)
-             ↓
-[8. CEO Question Round / What-If Interruption] (CEO adjusts parameters, triggering loop to Round 3)
-             ↓
-[9. Strategy Synthesizer Runs] (Weighted evaluation based on Trust Scores)
-             ↓
-[10. Business Decision Matrix Output] (Revenue, Profit, Inventory, Risk, NPS)
-             ↓
-[11. Business KPI Projection] (Simulated post-strategy metrics)
-             ↓
-[12. Why This Strategy Won] (Detailed justification)
-             ↓
-[13. Why Other Strategies Lost (Why-Not Panel)] (Explicit show-stoppers)
-             ↓
-[14. Business Memory Updated] (Historical outcome saved to ledger)
+Business Crisis
+      │
+      ▼
+Business Digital Twin Loaded
+      │
+      ▼
+Independent Investigation
+      │
+      ▼
+Evidence Sharing
+      │
+      ▼
+Executive Debate
+      │
+      ▼
+Strategy Proposal
+      │
+      ▼
+Executive Voting
+      │
+      ▼
+CEO What-If Intervention
+      │
+      ▼
+Strategy Synthesis
+      │
+      ▼
+Business KPI Projection
+      │
+      ▼
+Why This Strategy Won
+      │
+      ▼
+Why Other Strategies Lost
+      │
+      ▼
+Business Memory Updated
 ```
 
 ---
 
-## 📁 Project Directory Structure
+# 📊 Dashboard Components
+
+The dashboard consists of several business intelligence modules.
+
+### KPI Cards
+
+Displays
+
+- Business Health
+- Revenue Protected
+- Profit Impact
+- Market Threat
+- Customer Sentiment
+- Operational Risk
+- Inventory Health
+- Market Share
+
+---
+
+### Communication Graph
+
+Visualizes communication between executive agents during debates.
+
+---
+
+### Executive Agent Cards
+
+Displays
+
+- Executive Role
+- Current Status
+- Trust Score
+- Recommendation
+- Current Activity
+
+---
+
+### Debate Timeline
+
+Shows the chronological discussion between executives.
+
+---
+
+### CEO What-If Panel
+
+Allows executives to modify:
+
+- Competitor Discount
+- Shipment Delay
+- Customer Sentiment
+- Inventory Overstock
+- Demand Spike
+
+The system immediately recalculates recommendations.
+
+---
+
+### Voting Matrix
+
+Displays how every executive votes on competing business strategies.
+
+---
+
+### Strategy Dashboard
+
+Shows
+
+- Winning Strategy
+- Revenue Projection
+- Profit Impact
+- Business Health
+- Expected Outcomes
+
+---
+
+### Why-Not Panel
+
+Provides explainable AI by showing why rejected strategies were not selected.
+
+---
+
+### Business Memory Timeline
+
+Stores previous simulations and lessons learned to improve future decision-making.
+
+---
+
+# 📂 Project Structure
 
 ```
 marketpulse-ai/
-├── README.md                 # Core system documentation
-├── package.json              # Workspace script manager
+
+│
 ├── backend/
-│   ├── main.py               # FastAPI server, Real-Time SSE streams, Memory State Store
-│   ├── agents.py             # C-Suite Agent Models & 5-Stage Orchestrator
-│   ├── tools.py              # Business Intelligence MCP Layer tools
-│   ├── models.py             # Pydantic schemas for What-If variables & matrices
-│   ├── test_simulation.py    # CLI validation test script
-│   └── .env                  # GEMINI_API_KEY configuration
-└── frontend/
-    ├── package.json          # React, Framer Motion, and Recharts dependencies
-    ├── vite.config.js        # Vite config with reverse proxy
-    ├── index.html            # Web app entry point
-    └── src/
-        ├── main.jsx
-        ├── index.css         # Glassmorphic utilities & CRT overlay styling
-        ├── App.jsx           # Live war-room layout container
-        ├── mockData.js       # Fallback local data simulation presets
-        └── components/
-            ├── Header.jsx             # Twin status header bar
-            ├── KPICards.jsx           # Executive KPI Strip
-            ├── CommunicationGraph.jsx # SVG-based C-Suite communication network
-            ├── AgentGrid.jsx          # Agent cards, trust scores, and goals
-            ├── DebateTimeline.jsx     # Chronological message feed
-            ├── VotingPanel.jsx        # Executive Strategy Voting Matrix
-            ├── StrategyDashboard.jsx  # Radar chart & final recommendation actions
-            ├── WhyNotPanel.jsx        # Why-Not Rejected Strategy Explainability
-            ├── MemoryTimeline.jsx     # Past corporate lessons learned
-            └── CEOControlPanel.jsx    # Real-time What-If sliders
+│   ├── main.py
+│   ├── agents.py
+│   ├── tools.py
+│   ├── models.py
+│   ├── requirements.txt
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── mockData.js
+│   ├── package.json
+│   └── vite.config.js
+│
+├── README.md
+└── package.json
 ```
 
 ---
 
-## 👥 C-Suite Agents & MCP Tools
+# 🚀 Installation
 
-Each agent operates with its own system prompt, constraints, and custom tools:
+## Backend
 
-1.  **CFO (Finance)**: Goal is protecting gross margins (>=15%) and ROI (>=10%). Vetoes direct price matches. (Tool: `Financial Modeling MCP`)
-2.  **CMO (Marketing)**: Protects market share and brand equity. Focuses on customer acquisition and reach. (Tool: `Marketing Optimization MCP`)
-3.  **VP Inventory**: Optimizes storage levels. Aims to clear dead stock and prevent stockouts. (Tool: `Inventory Analytics MCP`)
-4.  **COO (Operations)**: Assesses logistics bottlenecks and protects delivery fulfillment SLAs. (Tool: `Supply Chain Intelligence MCP`)
-5.  **CCO (Customer)**: Monitors customer satisfaction and retention. Constraints: NPS >= 70, Churn < 8%. (Tool: `Customer Insight MCP`)
-6.  **VP Market Intel**: Constantly scans competitor pricing and threat events. (Tool: `Competitor Intelligence MCP`)
-7.  **CEO/Chief of Staff**: Orchestrates execution rounds, detects disputes, and maintains the boardroom communication link.
+```bash
+cd backend
 
----
+pip install -r requirements.txt
 
-## 🚀 Installation & Startup Guide
+uvicorn main:app --reload --port 8000
+```
 
-### Prerequisites
-*   Node.js (v18+)
-*   Python (3.9+)
+Backend runs on
 
-### 1. Backend Setup
-1.  Navigate to the backend directory:
-    ```bash
-    cd backend
-    ```
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  *(Optional)* Configure your Gemini key in `.env`:
-    ```env
-    GEMINI_API_KEY=your-api-key-here
-    ```
-4.  Start the FastAPI server:
-    ```bash
-    uvicorn main:app --reload --port 8000
-    ```
-
-### 2. Frontend Setup
-1.  Navigate to the frontend directory:
-    ```bash
-    cd ../frontend
-    ```
-2.  Install packages:
-    ```bash
-    npm install
-    ```
-3.  Start the Vite dev server:
-    ```bash
-    npm run dev
-    ```
-4.  Open [http://localhost:5173](http://localhost:5173) in your browser.
+```
+http://localhost:8000
+```
 
 ---
 
-## 📺 Cinematic 5-Minute Hackathon Demo Guide
+## Frontend
 
-1.  **Introduce the Dashboard**: Showcase the glowing dark theme, real-time Digital Twin status, and the C-Suite executive grid.
-2.  **Launch the Black Friday Price War**: Select *Competitor Flash Sale* + *Supplier Shipment Delay*. Click **Launch Crisis**.
-3.  **Watch the Multi-Agent Debate**: Point out the SVG Communication Network where glowing data packets transfer between nodes, the live chat timeline where CFO and CMO disagree on price-matching, and the populating Voting Matrix.
-4.  **CEO Intervention**: Drag the *Competitor Discount* slider to 60% and click **Recalculate Strategy**. Show how C-suite agents immediately renegotiate, updating the voting matrix and selecting the Bundle campaign instead of No Action.
-5.  **Explainability**: Open the **Why-Not Veto Panel** to show why direct price matches and ignoring competitor sales were rejected, proving that business constraints drive decisions.
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend runs on
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🔑 Gemini API (Optional)
+
+MarketPulse AI supports Google Gemini for enhanced executive reasoning.
+
+Create a `.env` file inside the backend folder.
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+If no API key is provided, the application automatically switches to a deterministic fallback simulation so every feature remains functional.
+
+---
+
+# 🎬 Demo Walkthrough
+
+### Step 1
+
+Launch the application.
+
+Observe the Business Digital Twin dashboard.
+
+---
+
+### Step 2
+
+Select crisis events such as
+
+- Competitor Flash Sale
+- Shipment Delay
+
+Click
+
+**Launch Crisis**
+
+---
+
+### Step 3
+
+Watch executives
+
+- investigate
+- debate
+- communicate
+- propose strategies
+
+---
+
+### Step 4
+
+Observe the
+
+- Voting Matrix
+- Strategy Recommendation
+- KPI Updates
+
+---
+
+### Step 5
+
+Adjust CEO What-If sliders.
+
+For example
+
+- Increase competitor discount
+- Increase shipment delay
+
+Click
+
+**Recalculate Strategy**
+
+Notice how every executive updates their recommendation.
+
+---
+
+### Step 6
+
+Open the
+
+**Why-Not Panel**
+
+to understand why rejected strategies were not selected.
+
+---
+
+### Step 7
+
+View the
+
+Business Memory Timeline
+
+to review previous simulations and lessons learned.
+
+---
+
+# 📸 Screenshots
+
+Add screenshots here after uploading them.
+
+```
+images/
+
+dashboard.png
+
+agents.png
+
+debate.png
+
+strategy.png
+
+memory.png
+```
+<img width="1920" height="1020" alt="Screenshot 2026-07-06 225451" src="https://github.com/user-attachments/assets/11dedd1d-ff09-4981-9899-23643f8900a2" />
+<img width="1920" height="1080" alt="Screenshot 2026-07-06 225828" src="https://github.com/user-attachments/assets/7b3772fc-0a83-4a7b-9233-a8a558c9ade6" />
+<img width="1920" height="1080" alt="Screenshot 2026-07-06 225850" src="https://github.com/user-attachments/assets/61f05352-0f17-4220-b1cc-b5489072e2cc" />
+
+---
+
+# 🎥 Demo Video
+
+A complete walkthrough video demonstrating the project is available on YouTube.
+
+(Add your YouTube link here)
+
+---
+
+# 🌐 GitHub Repository
+
+(Add your GitHub repository link here)
+
+---
+
+# 📌 Future Improvements
+
+- Real-world competitor pricing APIs
+- ERP integration
+- Live inventory synchronization
+- Financial forecasting models
+- Predictive demand forecasting
+- Real-time social media monitoring
+- Autonomous agent planning
+- Cloud deployment
+
+---
+
+# 👩‍💻 Team Members
+
+- Aishwarya D
+- Komal B
+- Priyanka B
+- Seema G R
+
+---
+
+# 📄 License
+
+Developed for the **Kaggle + Google AI Agents Intensive Vibe Coding Capstone Project**.
