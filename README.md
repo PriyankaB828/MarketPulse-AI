@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot 2026-07-06 225850" src="https://github.com/user-attachments/assets/a9376691-b408-4104-b42d-825c724b8a4c" /><img width="1920" height="1020" alt="Screenshot 2026-07-06 225451" src="https://github.com/user-attachments/assets/9ec74bcc-430d-412f-a237-9c4052da90f8" /># 🧠 MarketPulse AI
+# 🧠 MarketPulse AI
 
 > **Autonomous Executive Decision Intelligence Platform & Business Digital Twin**
 
